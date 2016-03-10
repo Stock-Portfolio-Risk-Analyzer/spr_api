@@ -16,7 +16,7 @@ def get_stock_data(symbol, start_date=None, end_date=None):
     :return: DataFrame of stock data from start_date to end_date
     """
     if start_date is None:
-        start_date = dt(year=1990, month=1, day=1)
+        start_date = dt(year=2016, month=1, day=1)
 
     if end_date is None:
         end_date = dt.today()

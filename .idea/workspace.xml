@@ -2,18 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dbb79bf-f0e5-46de-bc34-d3d014e25e0f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spr_api.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/test_datautils/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/test_datautils/secwiki_tickers.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/test_datautils/test_quandl.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/test_datautils/test_yahoo_finance.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/test_portfolio_utils/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/test_portfolio_utils/test_investor.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/test_portfolio_utils/test_portfolio.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/test_portfolio_utils/test_stock.py" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/test_datautils/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/test_datautils/secwiki_tickers.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/test_datautils/test_quandl.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/test_datautils/test_yahoo_finance.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/test_portfolio_utils/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/test_portfolio_utils/test_investor.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/test_portfolio_utils/test_portfolio.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/test_portfolio_utils/test_stock.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/api/__init__.py" afterPath="$PROJECT_DIR$/input_utils.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datautils/yahoo_finance.py" afterPath="$PROJECT_DIR$/datautils/yahoo_finance.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spr_api.py" afterPath="$PROJECT_DIR$/spr_api.py" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,7 +29,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/spr_api$spr_api.coverage" NAME="spr_api Coverage Results" MODIFIED="1457590305124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/spr_api$spr_api.coverage" NAME="spr_api Coverage Results" MODIFIED="1457591677518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -36,34 +38,65 @@
     <window id="1">
       <content type="file-editors">
         <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file leaf-file-name="yahoo_finance.py" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/datautils/yahoo_finance.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.18789144">
-                    <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-                    <folding>
-                      <element signature="e#0#14#0" expanded="true" />
-                      <element signature="e#267#906#0" expanded="false" />
-                      <element signature="e#267#493#1" expanded="false" />
-                      <element signature="e#987#1462#0" expanded="false" />
-                      <element signature="e#987#1250#1" expanded="false" />
-                      <element signature="e#1546#1808#0" expanded="false" />
-                      <element signature="e#1546#1708#1" expanded="false" />
-                      <element signature="e#1888#2141#0" expanded="false" />
-                      <element signature="e#1888#2047#1" expanded="false" />
-                      <element signature="e#2221#2246#0" expanded="false" />
-                      <element signature="e#2283#2400#0" expanded="false" />
-                      <element signature="e#2436#2737#0" expanded="false" />
-                      <element signature="e#2436#2530#1" expanded="false" />
-                      <element signature="e#2775#3077#0" expanded="false" />
-                      <element signature="e#2775#2864#1" expanded="false" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
+          <splitter split-orientation="horizontal" split-proportion="0.5">
+            <split-first>
+              <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+                <file leaf-file-name="yahoo_finance.py" pinned="false" current-in-tab="false">
+                  <entry file="file://$PROJECT_DIR$/datautils/yahoo_finance.py">
+                    <provider selected="true" editor-type-id="text-editor">
+                      <state vertical-scroll-proportion="0.0">
+                        <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+                        <folding>
+                          <element signature="e#0#14#0" expanded="true" />
+                          <element signature="e#267#493#1" expanded="false" />
+                          <element signature="e#987#1462#0" expanded="false" />
+                          <element signature="e#987#1250#1" expanded="false" />
+                          <element signature="e#1546#1808#0" expanded="false" />
+                          <element signature="e#1546#1708#1" expanded="false" />
+                          <element signature="e#1888#2141#0" expanded="false" />
+                          <element signature="e#1888#2047#1" expanded="false" />
+                          <element signature="e#2221#2246#0" expanded="false" />
+                          <element signature="e#2283#2400#0" expanded="false" />
+                          <element signature="e#2436#2737#0" expanded="false" />
+                          <element signature="e#2436#2530#1" expanded="false" />
+                          <element signature="e#2775#3077#0" expanded="false" />
+                          <element signature="e#2775#2864#1" expanded="false" />
+                        </folding>
+                      </state>
+                    </provider>
+                  </entry>
+                </file>
+                <file leaf-file-name="test_yahoo_finance.py" pinned="false" current-in-tab="true">
+                  <entry file="file://$PROJECT_DIR$/test/test_datautils/test_yahoo_finance.py">
+                    <provider selected="true" editor-type-id="text-editor">
+                      <state vertical-scroll-proportion="0.0">
+                        <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                        <folding>
+                          <element signature="e#0#15#0" expanded="true" />
+                        </folding>
+                      </state>
+                    </provider>
+                  </entry>
+                </file>
+              </leaf>
+            </split-first>
+            <split-second>
+              <leaf>
+                <file leaf-file-name="test_yahoo_finance.py" pinned="false" current-in-tab="true">
+                  <entry file="file://$PROJECT_DIR$/test/test_datautils/test_yahoo_finance.py">
+                    <provider selected="true" editor-type-id="text-editor">
+                      <state vertical-scroll-proportion="0.0">
+                        <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                        <folding>
+                          <element signature="e#0#15#0" expanded="true" />
+                        </folding>
+                      </state>
+                    </provider>
+                  </entry>
+                </file>
+              </leaf>
+            </split-second>
+          </splitter>
         </state>
       </content>
     </window>
@@ -73,20 +106,38 @@
     <favorites_list name="untitled" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="spr_api.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spr_api.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.14164306">
-              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="spr_api.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/spr_api.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.36480686">
+                  <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+                  <folding>
+                    <element signature="e#0#36#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="input_utils.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/input_utils.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -103,6 +154,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/untitled.py" />
+        <option value="$PROJECT_DIR$/input_utils.py" />
         <option value="$PROJECT_DIR$/datautils/yahoo_finance.py" />
         <option value="$PROJECT_DIR$/spr_api.py" />
       </list>
@@ -161,6 +213,56 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="spr_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spr_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spr_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spr_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spr_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test_portfolio_utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spr_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spr_api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test_datautils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -432,6 +534,13 @@
       <option name="number" value="Default" />
       <updated>1457588931648</updated>
     </task>
+    <task id="LOCAL-00001" summary="begin api&#10;">
+      <created>1457590404422</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1457590404422</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -440,22 +549,23 @@
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11632871" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3299539" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299539" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -469,6 +579,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="begin api&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="begin api&#10;" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -479,7 +593,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -490,7 +604,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <element signature="e#267#906#0" expanded="false" />
             <element signature="e#267#493#1" expanded="false" />
             <element signature="e#987#1462#0" expanded="false" />
             <element signature="e#987#1250#1" expanded="false" />
@@ -504,40 +617,57 @@
             <element signature="e#2436#2530#1" expanded="false" />
             <element signature="e#2775#3077#0" expanded="false" />
             <element signature="e#2775#2864#1" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datautils/yahoo_finance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#267#493#1" expanded="false" />
+            <element signature="e#987#1462#0" expanded="false" />
+            <element signature="e#987#1250#1" expanded="false" />
+            <element signature="e#1546#1808#0" expanded="false" />
+            <element signature="e#1546#1708#1" expanded="false" />
+            <element signature="e#1888#2141#0" expanded="false" />
+            <element signature="e#1888#2047#1" expanded="false" />
+            <element signature="e#2221#2246#0" expanded="false" />
+            <element signature="e#2283#2400#0" expanded="false" />
+            <element signature="e#2436#2737#0" expanded="false" />
+            <element signature="e#2436#2530#1" expanded="false" />
+            <element signature="e#2775#3077#0" expanded="false" />
+            <element signature="e#2775#2864#1" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_datautils/test_yahoo_finance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spr_api.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14164306">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.36480686">
+          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datautils/yahoo_finance.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18789144">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-            <element signature="e#267#906#0" expanded="false" />
-            <element signature="e#267#493#1" expanded="false" />
-            <element signature="e#987#1462#0" expanded="false" />
-            <element signature="e#987#1250#1" expanded="false" />
-            <element signature="e#1546#1808#0" expanded="false" />
-            <element signature="e#1546#1708#1" expanded="false" />
-            <element signature="e#1888#2141#0" expanded="false" />
-            <element signature="e#1888#2047#1" expanded="false" />
-            <element signature="e#2221#2246#0" expanded="false" />
-            <element signature="e#2283#2400#0" expanded="false" />
-            <element signature="e#2436#2737#0" expanded="false" />
-            <element signature="e#2436#2530#1" expanded="false" />
-            <element signature="e#2775#3077#0" expanded="false" />
-            <element signature="e#2775#2864#1" expanded="false" />
+            <element signature="e#0#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
