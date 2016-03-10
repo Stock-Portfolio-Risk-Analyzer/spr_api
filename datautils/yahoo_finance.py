@@ -104,6 +104,3 @@ def get_company_sector(symbol):
     code = company_info['Name'].keys()[0]
     company_sector = company_info.to_dict()['Sector'][code]
     return company_sector
-
-if __name__ == "__main__":
-    unittest.main()
